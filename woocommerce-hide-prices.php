@@ -49,6 +49,9 @@ if ( ! defined( 'WCHP_PLUGIN_URL' ) ) {
     define( 'WCHP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
+// Include the update checker
+require_once WCHP_PLUGIN_DIR . 'includes/plugin-update-checker/plugin-update-checker.php';
+
 /**
  * Declare WooCommerce High-Performance Order Storage (HPOS) compatibility
  *
